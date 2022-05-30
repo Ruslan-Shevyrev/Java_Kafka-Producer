@@ -30,7 +30,7 @@ public class KafkaSentProducer {
                 KafkaProducer producer = new KafkaProducer<String, String>(kafkaProps);
 
                 ProducerRecord<String, String> record =
-                new ProducerRecord<>("kafkaTest", "From Test2");
+                new ProducerRecord<>("kafkaTest", "From Test");
                 try {
                     producer.send(record).get();
                 } catch (Exception e) {
